@@ -1,0 +1,39 @@
+<mxfile host="65bd71144e" modified="2021-03-26T08:12:09.866Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.54.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="_Hn1-9y7Xhce_mWNcpaD" version="14.2.4" type="embed">
+    <diagram id="T75ojMYrTgQELHcqDZd3" name="ページ1">
+        <mxGraphModel dx="728" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="users" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="90" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="nickname                   :string  :NOTNULL&#10;email                          :string  :NOTNULL unique:true&#10;encrypted_password  :string  :NOTNULL" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
+                    <mxGeometry y="26" width="300" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="90" width="226" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="image                   :Activestorage&#10;name                    :string    :NOTNULL&#10;description           :text       :NOTNULL&#10;url                         :text       :NOTNULL&#10;user                      :references&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;align=left;" parent="20" vertex="1">
+                    <mxGeometry y="26" width="226" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="comments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="290" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="text :text  :NOTNULL&#10;user :references&#10;item :references" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="24" vertex="1">
+                    <mxGeometry y="26" width="160" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.398;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERmany;startFill=0;startSize=10;endArrow=ERone;endFill=0;endSize=10;" parent="1" source="25" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.576;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERmany;startFill=0;startSize=10;endArrow=ERone;endFill=0;endSize=10;" parent="1" source="25" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;endSize=10;startSize=10;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="411" y="148" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

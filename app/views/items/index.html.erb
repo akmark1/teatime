@@ -1,1 +1,18 @@
-<h1>Hello world</h1>
+<%# 商品一覧 %>
+  <div class='item-contents'>
+    <h2 class='title'>おすすめの紅茶</h2>
+    <ul class='item-lists'>
+    <% @items.each do |item|%>
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='item-img-content'>
+          <%= image_tag item.image, class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.name %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<%# 商品一覧 %>

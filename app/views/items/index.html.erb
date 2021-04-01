@@ -1,30 +1,47 @@
-<header>
-  <ul>
-    <% if user_signed_in? %>
-      <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
-    <% else %>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-    <% end %>
-  </ul>
-</header>
+<head>
+<link rel="stylesheet" type="text/css" href="css/5-1-14.css">
+</head>
 
-<%# 商品一覧 %>
-  <div class='item-contents'>
-    <h2 class='title'>おすすめの紅茶</h2>
-    <ul class='item-lists'>
-    <% @items.each do |item|%>
-      <li class='list'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<body>
+  <div class='main'>
+
+  <%# メニューボタン %>
+  <div class="openbtn"><span></span><span></span><span></span></div>
+
+  <nav id="g-nav">
+  <div id="g-nav-list">
+    <ul>
+      <li><a href="#top">Top</a></li>
+      <li><a href="#top">Top</a></li>
+      <li><a href="#top">Top</a></li>
+      <li><a href="#top">Top</a></li>
+    </ul>
+  </div>
+  </nav>
+  <%# /メニューボタン %>
+
+  <%# /概要・案内 %>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      <%= image_tag "title.png" %>
+    </h2>
+  </div>
+  <%# /概要・案内 %>
+
+  <%# ギャラリー表示 %>
+  <ul class="gallery">
+    <% @items.each do |item| %>
       <%= link_to item_path(item.id) do %>
-        <div class='item-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= item.name %>
-        </div>
+        <%= image_tag item.image %>
+        <%= item.name%>
       <% end %>
     <% end %>
+  </ul>
+  <%# /ギャラリー表示 %>
+
   </div>
-<%# 商品一覧 %>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/5-1-14.js"></script>
+</body>

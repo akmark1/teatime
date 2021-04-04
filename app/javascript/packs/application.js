@@ -7,8 +7,11 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
-require('../5-1-14')
+require('jquery')
+require('../jquery-3.6.0.min')
+require('../menu')
+require('../vegas.min')
+require('../slider')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

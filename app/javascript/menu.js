@@ -1,3 +1,5 @@
+jQuery(function($){
+
 $(".openbtn").click(function(){
   $(this).toggleClass('active');
   $("#g-nav").toggleClass('panelactive');
@@ -6,4 +8,6 @@ $(".openbtn").click(function(){
 $("#g-nav a").click(function(){
   $(".openbtn").removeClass('active');
   $("#g-nav").removeClass('panelactive');
+});
+
 });

@@ -1,26 +1,19 @@
 <head>
-<link rel="stylesheet" type="text/css" href="css/5-1-14.css">
 </head>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <body>
   <div class='main'>
 
-  <%# メニューボタン %>
-  <div class="openbtn"><span></span><span></span><span></span></div>
+  <%# スライドショー %>
 
-  <nav id="g-nav">
-  <div id="g-nav-list">
-    <ul>
-      <li><a href="#top">Top</a></li>
-      <li><a href="#top">Top</a></li>
-      <li><a href="#top">Top</a></li>
-      <li><a href="#top">Top</a></li>
-    </ul>
+  <div id="slider">
+  <!--/slider-->
+    <h2 class='slider-title'>
+      <%= image_tag "title.png" %>
+    </h2>
   </div>
-  </nav>
-  <%# /メニューボタン %>
+
+  <%# /スライドショー %>
 
   <%# /概要・案内 %>
   <div class='title-contents'>
@@ -29,6 +22,20 @@
     </h2>
   </div>
   <%# /概要・案内 %>
+
+  <%# メニューボタン %>
+  <div class="openbtn"><span></span><span></span><span></span></div>
+
+  <nav id="g-nav">
+  <div id="g-nav-list">
+    <ul class="menu-contents">
+      <%= link_to "#", class:"menu-content" do %>TOP<%end%>
+      <%= link_to "#", class:"menu-content" do %>POST<%end%>
+      <%= link_to "#", class:"menu-content" do %>LOGIN<%end%>
+    </ul>
+  </div>
+  </nav>
+  <%# /メニューボタン %>
 
   <%# ギャラリー表示 %>
   <ul class="gallery">
@@ -42,6 +49,4 @@
   <%# /ギャラリー表示 %>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/5-1-14.js"></script>
 </body>

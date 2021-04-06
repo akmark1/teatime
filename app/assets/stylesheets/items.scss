@@ -4,6 +4,7 @@ a {
 
 .main {
   background-color: rgb(241, 239, 239);
+  font-family: serif;
 }
 
 /* スライドショー */
@@ -16,38 +17,6 @@ a {
 
 .slider-title {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-}
-
-/* //スライドショー */
-
-/* 画面上部の帯部分 */
-
-.title-contents {
-  width: 100vw;
-  height: 400px;
-  background-image: image-url('top.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.service-title {
-  position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
@@ -57,7 +26,7 @@ a {
   padding:0;
 }
 
-/* //画面上部の帯部分 */
+/* //スライドショー */
 
 /* メニュー */
 
@@ -78,7 +47,7 @@ a {
   left : 14px;
   height: 3px;
   border-radius: 2px;
-  background-color: rgb(39, 38, 38);
+  background-color: rgb(116, 113, 113);
   width: 45%;
 }
 
@@ -130,7 +99,15 @@ a {
   right: -120%;
   width: 100%;
   height: 100vh;
-  background: rgba(228, 131, 184, 0.8);
+  opacity    : .6;
+  background : linear-gradient(124deg, 
+                               red,
+                               orange,
+                               yellow,
+                               green,
+                               aqua,
+                               blue,
+                               purple);
   transition: all 0.6s;
 }
 
@@ -150,11 +127,19 @@ a {
 }
 
 .menu-content{
-  font-size: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
   color:rgb(250, 249, 249)
 }
 
 /* //メニュー */
+
+.guide{
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
 
 /* ギャラリー表示 */
 
@@ -165,13 +150,14 @@ a {
 }
 
 .gallery li{
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   list-style: none;
 }
 
 .gallery img{
   width: 100%;
   height: auto;
+  box-shadow: 3px rgba(0, 0, 0, 0.3)
 }
 
 @media only screen and (max-width: 900px) {
@@ -184,6 +170,19 @@ a {
   .gallery{
     columns: 2;
   }
+}
+
+.item-image{
+  margin-bottom: 5px;
+  box-shadow: 0px 15px 15px 0 rgba(0, 0, 0, .5);
+}
+
+.item-name{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+  margin-bottom: 10px;
 }
 
 /* //ギャラリー表示 */

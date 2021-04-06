@@ -1,52 +1,32 @@
-<head>
-</head>
+<div class='main'>
 
-<body>
-  <div class='main'>
+<%= render "menu" %>
 
   <%# スライドショー %>
 
   <div id="slider">
   <!--/slider-->
     <h2 class='slider-title'>
-      <%= image_tag "title.png" %>
+      <%= image_tag "title2.png" %>
     </h2>
   </div>
 
   <%# /スライドショー %>
 
-  <%# /概要・案内 %>
-  <div class='title-contents'>
-    <h2 class='service-title'>
-      <%= image_tag "title.png" %>
-    </h2>
-  </div>
-  <%# /概要・案内 %>
-
-  <%# メニューボタン %>
-  <div class="openbtn"><span></span><span></span><span></span></div>
-
-  <nav id="g-nav">
-  <div id="g-nav-list">
-    <ul class="menu-contents">
-      <%= link_to "#", class:"menu-content" do %>TOP<%end%>
-      <%= link_to "#", class:"menu-content" do %>POST<%end%>
-      <%= link_to "#", class:"menu-content" do %>LOGIN<%end%>
-    </ul>
-  </div>
-  </nav>
-  <%# /メニューボタン %>
+  <h1 class="guide">POSTS LIST</h1>
 
   <%# ギャラリー表示 %>
   <ul class="gallery">
-    <% @items.each do |item| %>
+    <li><% @items.each do |item| %>
       <%= link_to item_path(item.id) do %>
-        <%= image_tag item.image %>
-        <%= item.name%>
+        <%= image_tag item.image, class: "item-image" %>
+        <h3 class='item-name'>
+          <%= item.name %>
+        </h3>
       <% end %>
     <% end %>
+    </li>
   </ul>
   <%# /ギャラリー表示 %>
 
-  </div>
-</body>
+</div>

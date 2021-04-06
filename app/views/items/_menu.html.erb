@@ -1,0 +1,17 @@
+<%# メニューボタン %>
+  <div class="openbtn"><span></span><span></span><span></span></div>
+
+  <nav id="g-nav">
+  <div id="g-nav-list">
+    <ul class="menu-contents">
+      <%= link_to 'TOP', '/', class:"menu-content" %>
+      <%= link_to 'POST', new_item_path, class:"menu-content" %>
+    <% if user_signed_in? %>
+      <%= link_to 'LOGOUT', destroy_user_session_path, method: :delete, class:"menu-content" %>
+    <% else %>
+      <%= link_to 'LOGIN', new_user_session_path, class:"menu-content" %>
+    <% end %>
+    </ul>
+  </div>
+  </nav>
+ <%# /メニューボタン %>

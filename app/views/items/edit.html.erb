@@ -1,3 +1,7 @@
+<div class='main'>
+
+<%= render "menu" %>
+
 <%= form_with model: @item, class: 'form', local: true do |f| %>
   <div class="form-input">
     <%= f.text_field :name, class: 'form-message', placeholder: 'name' %>
@@ -10,3 +14,5 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
+
+</div>

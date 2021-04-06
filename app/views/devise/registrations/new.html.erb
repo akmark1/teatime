@@ -1,34 +1,50 @@
-<h2>Sign up</h2>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<body>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+<div class="login">
+  <h2><%= link_to 'sign up', new_user_session_path, class:"out" %></h2>
 
-  <div class="field">
-    <%= f.label :nickname %><br />
-    <%= f.text_area :nickname, autofocus: true, autocomplete: "nickname" %>
-  </div>
+  <h2 class="in"> sign up </h2>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+    <%= f.text_area :nickname, autofocus: true, autocomplete: "nickname", class:"text" %>
+     <div class="text-option">nickname</div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <br>
+    
+    <br>
+   
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"text", type:"text" %>
+     <div class="text-option">email</div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <br>
+    
+    <br>
 
-<%= render "devise/shared/links" %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"text"%>
+      <div class="text-option">password</div>
+
+    <br>
+    
+    <br>
+
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"text" %>
+      <div class="text-option">password</div>
+    <br>
+
+    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+    <label for="checkbox-1-1">Keep me Signed in</label>
+    
+    <button class="signin">
+      Sign Up
+    </button>
+
+
+    <hr>
+
+  <% end %>
+
+</div>
+
+</body>

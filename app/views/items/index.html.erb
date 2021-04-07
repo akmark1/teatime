@@ -20,9 +20,9 @@
     <li><% @items.each do |item| %>
       <%= link_to item_path(item.id) do %>
         <%= image_tag item.image, class: "item-image" %>
-        <p><h3 class='item-name'>
+        <span class='item-name'>
           <%= item.name %>
-        </h3></p>
+        </span>
       <% end %>
     <% end %>
     </li>

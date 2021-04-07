@@ -30,7 +30,7 @@
   <br>
 
   <% if user_signed_in? && current_user.id == @item.user_id %>
-    <%= link_to "商品の編集", edit_item_path, method: :get %>
+    <%= link_to "編集", edit_item_path, method: :get %>
     <p class="or-text">or</p>
     <%= link_to "削除", item_path, method: :delete %>
   <% end %>

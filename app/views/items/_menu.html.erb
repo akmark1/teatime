@@ -10,6 +10,7 @@
       <%= link_to 'LOGOUT', destroy_user_session_path, method: :delete, class:"menu-content" %>
     <% else %>
       <%= link_to 'LOGIN', new_user_session_path, class:"menu-content" %>
+      <%= link_to 'SIGNUP', new_user_registration_path, class:"menu-content" %>
     <% end %>
     </ul>
   </div>

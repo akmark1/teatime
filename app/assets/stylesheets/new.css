@@ -1,0 +1,46 @@
+.item-new{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color:rgb(253, 253, 253);
+  background-color: rgb(139, 134, 134);
+  background: url(a.jpg) no-repeat   center center #505050;   
+  background-size: cover;
+}
+
+.new-top{
+  padding-top: 75px;
+  font-size: 30px;
+}
+
+.text-new {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(122, 122, 122, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+.text-new:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text-new:focus + .text-option {
+  opacity: 0.6;
+}
+
+.new-submit{
+  width: 50vw;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}

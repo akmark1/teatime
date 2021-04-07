@@ -4,36 +4,37 @@
 
 <%# 商品の概要 %>
 <div class="item-show">
-  <div class="item-box">
-    <h2 class="name">
-      <%= @item.name %>
-    </h2>
-    <div class="item-img-content">
-      <%= image_tag @item.image ,class:"item-box-img" %>
-    </div>
 
-    <% if user_signed_in? && current_user.id == @item.user_id %>
-      <%= link_to "商品の編集", edit_item_path, method: :get, class: "item-red-btn" %>
-      <p class="or-text">or</p>
-      <%= link_to "削除", item_path, method: :delete, class:"item-destroy" %>
-    <% end %>
+  <br>
 
-    <div class="item-explain-box">
-      <span><%= @item.description %></span>
-    </div>
-    <table class="detail-table">
-      <tbody>
-        <tr>
-          <th class="detail-item">出品者</th>
-          <td class="detail-value"><%= @item.user.nickname %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">URL</th>
-          <td class="detail-value"><%= @item.url %></td>
-        </tr>
-      </tbody>
-    </table>
+  <div>
+    <%= image_tag @item.image ,class:"item-show-image" %>
   </div>
+
+  <br>
+
+  <div>
+    <h4>タイトル</h4>
+    <div><%= @item.name %></div>
+    <br>
+    <h4>詳細</h4>
+    <div><%= @item.description %></div>
+    <br>
+    <h4>投稿者</h4>
+    <div><%= @item.user.nickname %></div>
+    <br>
+    <h4>URL</h4>
+    <div><%= @item.url %>
+  </div>
+
+  <br>
+
+  <% if user_signed_in? && current_user.id == @item.user_id %>
+    <%= link_to "商品の編集", edit_item_path, method: :get %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", item_path, method: :delete %>
+  <% end %>
+
 </div>
 <%# /商品の概要 %>
 
@@ -60,3 +61,4 @@
 <%# /コメント機能 %>
 
 </div>
+

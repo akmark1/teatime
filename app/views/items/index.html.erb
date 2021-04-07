@@ -19,10 +19,10 @@
   <ul class="gallery">
     <li><% @items.each do |item| %>
       <%= link_to item_path(item.id) do %>
-        <h3 class='item-name'>
-          <%= item.name %>
-        </h3>
         <%= image_tag item.image, class: "item-image" %>
+        <p><h3 class='item-name'>
+          <%= item.name %>
+        </h3></p>
       <% end %>
     <% end %>
     </li>

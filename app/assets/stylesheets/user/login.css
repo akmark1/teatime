@@ -13,7 +13,7 @@ body,
   width: 100vw;
   margin: auto;
   padding: 50px 50px;
-  background: url(../sign.jpg) no-repeat   center center #505050;   
+  background: url("../sign.jpg") no-repeat   center center #505050;   
   background-size: cover;
   box-sizing: border-box;
 }

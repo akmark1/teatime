@@ -13,7 +13,7 @@ body,
   width: 100vw;
   margin: auto;
   padding: 50px 50px;
-  background: url("../sign-37c4ef16511010102040e2b4aa882c5e4689edbd42a4e6c0ab11b07a5dabfb82.jpg") no-repeat   center center #505050;   
+  background: url("sign.jpg") no-repeat   center center #505050;   
   background-size: cover;
   box-sizing: border-box;
 }
@@ -24,10 +24,16 @@ form {
 
 .in {
   border-bottom: 2px solid #1161ed;
+  font-size: 25px;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
 .out {
   color: rgba(255, 255, 255, 0.2);
+  font-size: 25px;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
 h2 {

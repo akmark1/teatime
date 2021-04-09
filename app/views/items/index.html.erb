@@ -16,19 +16,21 @@
   <h1 class="guide">POSTS LIST</h1>
 
   <%# ギャラリー表示 %>
-  <div class="fadeUpTrigger">
+  
     <ul class="gallery">
       <li><% @items.each do |item| %>
+      　<div class="fadeUpTrigger">
         <%= link_to item_path(item.id) do %>
           <%= image_tag item.image, class: "item-image" %>
           <span class='item-name'>
             <%= item.name %>
           </span>
         <% end %>
+        </div>
       <% end %>
       </li>
     </ul>
-  </div>
+  
   <%# /ギャラリー表示 %>
 
 </div>

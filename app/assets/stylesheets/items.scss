@@ -188,4 +188,39 @@ a {
   margin-bottom: 10px;
 }
 
+/* 下から出てくる */
+
+.bgextend,
+.lineTrigger{
+	width: 220px;
+	padding: 20px;
+	margin:0 20px 20px 0;
+	box-sizing:border-box;
+}
+
+.fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+  .fadeUpTrigger{
+   
+  }
+
+/* //下から出てくる */
+
 /* //ギャラリー表示 */

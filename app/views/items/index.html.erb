@@ -19,14 +19,14 @@
   
     <ul class="gallery">
       <li><% @items.each do |item| %>
-      　<div class="fadeUpTrigger">
         <%= link_to item_path(item.id) do %>
+          <div class="fadeUpTrigger">
           <%= image_tag item.image, class: "item-image" %>
           <span class='item-name'>
             <%= item.name %>
           </span>
+          </div>
         <% end %>
-        </div>
       <% end %>
       </li>
     </ul>

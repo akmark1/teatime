@@ -190,17 +190,9 @@ a {
 
 /* 下から出てくる */
 
-.bgextend,
-.lineTrigger{
-	width: 220px;
-	padding: 20px;
-	margin:0 20px 20px 0;
-	box-sizing:border-box;
-}
-
 .fadeUp{
   animation-name: fadeUpAnime;
-  animation-duration:0.5s;
+  animation-duration:1.0s;
   animation-fill-mode:forwards;
   opacity:0;
   }
@@ -218,7 +210,7 @@ a {
   }
 
   .fadeUpTrigger{
-   
+   opacity: 0;
   }
 
 /* //下から出てくる */

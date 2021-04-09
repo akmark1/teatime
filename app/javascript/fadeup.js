@@ -1,7 +1,5 @@
 jQuery(function($){
 
-  console.log(1);
-
 function fadeAnime(){
 
 $('.fadeUpTrigger').each(function(){
@@ -17,7 +15,7 @@ $('.fadeUpTrigger').each(function(){
 
 }
 
-$(window).scroll(function (){
+$(window).scroll(function(){
   fadeAnime();
 });
 

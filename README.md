@@ -21,6 +21,8 @@
 
 [![Image from Gyazo](https://i.gyazo.com/d322d794834310893aba2fe8c92d3f71.gif)](https://gyazo.com/d322d794834310893aba2fe8c92d3f71)
 
+[![Image from Gyazo](https://i.gyazo.com/d322d794834310893aba2fe8c92d3f71.gif)](https://gyazo.com/d322d794834310893aba2fe8c92d3f71)
+
 # ユーザー新規登録画面
 
 [![Image from Gyazo](https://i.gyazo.com/00ba19fd42fe26f04aab468265b4ba01.jpg)](https://gyazo.com/00ba19fd42fe26f04aab468265b4ba01)
@@ -30,6 +32,8 @@
 <[![Image from Gyazo](https://i.gyazo.com/c01a551cb99acb7a4fbf3633084483ff.jpg)](https://gyazo.com/c01a551cb99acb7a4fbf3633084483ff)
 
 # 投稿一覧
+
+[![Image from Gyazo](https://i.gyazo.com/ce17382967ed46748be4a122adc0c3bd.gif)](https://gyazo.com/ce17382967ed46748be4a122adc0c3bd)
 
 [![Image from Gyazo](https://i.gyazo.com/ce17382967ed46748be4a122adc0c3bd.gif)](https://gyazo.com/ce17382967ed46748be4a122adc0c3bd)
 

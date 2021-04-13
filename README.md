@@ -17,7 +17,7 @@
 
 # トップページ
 
-[![Image from Gyazo](https://i.gyazo.com/d322d794834310893aba2fe8c92d3f71.gif)](https://gyazo.com/d322d794834310893aba2fe8c92d3f71)
+[![Image from Gyazo](https://i.gyazo.com/62a1cb94171d13d5b710845e6873dc60.gif)](https://gyazo.com/62a1cb94171d13d5b710845e6873dc60)
 
 # ユーザー新規登録画面
 
@@ -29,7 +29,7 @@
 
 # 投稿一覧
 
-[![Image from Gyazo](https://i.gyazo.com/ce17382967ed46748be4a122adc0c3bd.gif)](https://gyazo.com/ce17382967ed46748be4a122adc0c3bd)
+[![Image from Gyazo](https://i.gyazo.com/b51ed8de86ac9b544952c453b2610147.gif)](https://gyazo.com/b51ed8de86ac9b544952c453b2610147)
 
 # 投稿詳細ページ
 

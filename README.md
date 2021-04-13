@@ -12,29 +12,30 @@
 
 # 使用言語
 
-・Ruby
-
-・Ruby on Rails
-
-・Javascript
-
-・HTML/CSS
+- Ruby
+- Ruby on Rails
+- Javascript
+- HTML/CSS
 
 # トップページ
 
-<!-- 画像を貼る -->
+[![Image from Gyazo](https://i.gyazo.com/d322d794834310893aba2fe8c92d3f71.gif)](https://gyazo.com/d322d794834310893aba2fe8c92d3f71)
 
 # ユーザー新規登録画面
 
-<!-- 画像を貼る -->
+[![Image from Gyazo](https://i.gyazo.com/00ba19fd42fe26f04aab468265b4ba01.jpg)](https://gyazo.com/00ba19fd42fe26f04aab468265b4ba01)
 
 # 投稿ページ
 
-<!-- 画像を貼る -->
+<[![Image from Gyazo](https://i.gyazo.com/c01a551cb99acb7a4fbf3633084483ff.jpg)](https://gyazo.com/c01a551cb99acb7a4fbf3633084483ff)
 
-# コメント機能
+# 投稿一覧
 
-<!-- 画像を貼る -->
+[![Image from Gyazo](https://i.gyazo.com/ce17382967ed46748be4a122adc0c3bd.gif)](https://gyazo.com/ce17382967ed46748be4a122adc0c3bd)
+
+# 投稿詳細ページ
+
+[![Image from Gyazo](https://i.gyazo.com/54b1a1903901938b88ff809f1dc8d419.gif)](https://gyazo.com/54b1a1903901938b88ff809f1dc8d419)
 
 # App URL
 
@@ -42,31 +43,23 @@ https://teatime-34843.herokuapp.com/
 
 # テスト用アカウント
 
-・email:test@test
-
-・password:111aaa
+- email:test@test
+- password:111aaa
 
 # 利用方法
 
-・トップページから右上の「三」をクリック
-
-・SIGN UPをクリック
-
-・nickname,email,passwordを入力
-
-・トップページに偏移
-
-・再度「三」をクリックしPOSTをクリック
-
-・画像,名前,説明,URLを入力しSENDをクリック
+- トップページから右上の「三」をクリック
+- SIGN UPをクリック
+- nickname,email,passwordを入力
+- トップページに偏移
+- 再度「三」をクリックしPOSTをクリック
+- 画像,名前,説明,URLを入力しSENDをクリック
 
 ## 投稿詳細ページ
 
-・トップページを下にスクロールすると投稿一覧が表示されるので投稿をクリックすると詳細ページに偏移
-
-・投稿者は詳細ページから投稿の削除,編集が可能
-
-・全てのユーザーはコメントが可能
+- トップページを下にスクロールすると投稿一覧が表示されるので投稿をクリックすると詳細ページに偏移
+- 投稿者は詳細ページから投稿の削除,編集が可能
+- 全てのユーザーはコメントが可能
 
 # テーブル設計
 

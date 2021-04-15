@@ -8,9 +8,13 @@
 <%= form_with model: @item, class: 'form', local: true do |f| %>
   <div>
   <ul>
-    <li><%= f.text_field :name, class: 'text-new', placeholder: 'name' %></li>
-    <li><%= f.text_field :description, class: 'text-new', placeholder: 'description' %></li>
-    <li><%= f.text_field :url, class: 'text-new', placeholder: 'url' %></li>
+    <div class="new-holder">NAME</div>
+    <li><%= f.text_field :name, class: 'text-new' %></li>
+    <div class="new-holder">DESCRIPTION</div>
+    <li><%= f.text_field :description, class: 'text-new' %></li>
+    <div class="new-holder">URL</div>
+    <li><%= f.text_field :url, class: 'text-new' %></li>
+    
     <li><label class="form-image">
       <span class="image-file">画像</span>
       <%= f.file_field :image, class: 'hidden' %>

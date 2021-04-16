@@ -26,7 +26,7 @@
 
 # 投稿ページ
 
-<[![Image from Gyazo](https://i.gyazo.com/c01a551cb99acb7a4fbf3633084483ff.jpg)](https://gyazo.com/c01a551cb99acb7a4fbf3633084483ff)
+[![Image from Gyazo](https://i.gyazo.com/be1ee1d03e9f3a17d36cdce38dd595c3.jpg)](https://gyazo.com/be1ee1d03e9f3a17d36cdce38dd595c3)
 
 # 投稿一覧
 

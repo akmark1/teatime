@@ -40,8 +40,6 @@
 
 https://teatime-34843.herokuapp.com/
 
-# ゲストログイン
-
 # テスト用アカウント
 
 - email:test@test

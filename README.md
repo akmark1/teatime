@@ -30,7 +30,7 @@
 
 # 投稿一覧
 
-[![Image from Gyazo](https://i.gyazo.com/19a331b2e62ecab770e72b283ffe82c4.jpg)](https://gyazo.com/19a331b2e62ecab770e72b283ffe82c4)
+[![Image from Gyazo](https://i.gyazo.com/585655745e6ec3cb8cd91d7b74625bef.jpg)](https://gyazo.com/585655745e6ec3cb8cd91d7b74625bef)
 
 # 投稿詳細ページ
 

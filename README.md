@@ -18,7 +18,7 @@
 
 # トップページ
 
-[![Image from Gyazo](https://i.gyazo.com/62a1cb94171d13d5b710845e6873dc60.gif)](https://gyazo.com/62a1cb94171d13d5b710845e6873dc60)
+[![Image from Gyazo](https://i.gyazo.com/db2805569a666aa96d32fc9051f2cd93.gif)](https://gyazo.com/db2805569a666aa96d32fc9051f2cd93)
 
 # ユーザー新規登録画面
 

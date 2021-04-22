@@ -22,8 +22,8 @@ var bar = new ProgressBar.Line(splash_text,{
   }
 });
 
-bar.animate(1.0, function (){
-  $("splash").delay(500).fadeOut(800);
+bar.animate(1.0, function () {
+  $("#splash").delay(500).fadeOut(800);
 });
 
 });
